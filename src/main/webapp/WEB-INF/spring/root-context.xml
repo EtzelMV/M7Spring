@@ -12,16 +12,16 @@
     <!-- Configuración de la Base de Datos -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <!-- Driver -->
-        <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
 
         <!-- URL de conexión -->
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+        <property name="url" value="jdbc:mysql://localhost:3306/homebanking?useSSL=false&amp;serverTimezone=UTC" />
 
         <!-- Nombre de Usuario -->
-        <property name="username" value="system" />
+        <property name="username" value="etzel" />
 
         <!-- Contraseña de Acceso -->
-        <property name="password" value="root" />
+        <property name="password" value="1234567a." />
     </bean>
 
     <!-- Configuración de JPA -->
@@ -67,4 +67,5 @@
     <!-- Configuración de los Repositorios -->
     <jpa:repositories base-package="talentodigital.etzel.certificacion.repositorios" />
 
+<!-- Developer: https://www.facebook.com/iEtzel -->
 </beans>
